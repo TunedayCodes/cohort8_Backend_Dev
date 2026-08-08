@@ -22,13 +22,13 @@ let student = {
     year: 2024,
     friends : ["John", "Jane", "Doe"]
 }
-console.log(student);
+//console.log(student);
 student.gender = "Male";
-console.log(student);
+//console.log(student);
 student.course = "Node.js";
-console.log(student);
+//console.log(student);
 delete student.year;
-console.log(student);
+//console.log(student);
 
 let employee = {
     name: "Tunde Balogun",
@@ -43,3 +43,19 @@ let hisSalary = employee.salary;
 let hisCity = employee.city;
 
 const { name, role, salary, city } = employee;
+
+let DNA =  {
+    gender : "XY",
+    complexion : "Dark"
+}
+
+let offSpring = {
+    ...DNA,
+    name : "Tunde Fadipe",
+    age : 30
+}
+console.log(offSpring);
+
+console.log(Object.keys(offSpring));
+console.log(Object.values(offSpring));
+console.log(Object.entries(offSpring));
